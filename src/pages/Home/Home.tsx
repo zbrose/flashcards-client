@@ -5,7 +5,7 @@ export default function Home() {
   // navigate to deck or card input forms
 
   return (
-    <section>
+    <section data-testid="home-page">
       <NavLink to="/create">Create New Deck</NavLink>
       <NavLink to="/create">Add New Card</NavLink>
     </section>

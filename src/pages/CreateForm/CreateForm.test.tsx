@@ -1,16 +1,16 @@
 import { describe, expect, it } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
-import Home from "./Home";
+import CreateForm from "./CreateForm";
 
 describe("Home page", () => {
   it("renders", () => {
     render(
       <MemoryRouter>
-        <Home />
+        <CreateForm />
       </MemoryRouter>,
     );
 
-    expect(screen.getByTestId(/home-page/i)).toBeInTheDocument();
+    expect(screen.getByTestId(/create-form/i)).toBeInTheDocument();
   });
 });
